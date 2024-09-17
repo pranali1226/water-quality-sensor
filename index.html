@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Monitoring</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <h1>Water Quality Monitoring</h1>
+
+    <div class="container">
+        <div class="section chlorine-section">
+            <h2>Chlorine in Water</h2>
+            <p>Chlorine is commonly used in water treatment to disinfect water, making it safe to drink by killing bacteria and viruses. However, excessive levels of chlorine can cause health problems such as respiratory issues, skin irritation, and a strong taste and smell in water.</p>
+            <p>Thresholds for Chlorine in Water:</p>
+            <ul>
+                <li><b>Drinkable:</b> Below 0.5 ppm</li>
+                <li><b>Medium:</b> 0.5 - 1.0 ppm</li>
+                <li><b>Hazardous:</b> Above 1.0 ppm</li>
+            </ul>
+            <canvas id="chlorineChart"></canvas>
+        </div>
+        <div class="section silver-section">
+            <h2>Silver Ions in Water</h2>
+            <p>Silver ions can be effective in water disinfection due to their antibacterial properties. However, consuming water with high concentrations of silver ions may pose health risks such as skin discoloration and argyria, a condition that turns skin blue-gray.</p>
+            <p>Thresholds for Silver Ions in Water:</p>
+            <ul>
+                <li><b>Drinkable:</b> Below 0.1 ppm</li>
+                <li><b>Medium:</b> 0.1 - 0.3 ppm</li>
+                <li><b>Hazardous:</b> Above 0.3 ppm</li>
+            </ul>
+            <canvas id="silverChart"></canvas>
+        </div>
+
+        
+        <div class="section ecoli-section">
+            <h2>E. coli in Water</h2>
+            <p>E. coli bacteria can enter drinking water through contamination from human or animal waste. Its presence in water is an indication of potential fecal contamination, which can lead to severe gastrointestinal illnesses if consumed.</p>
+            <p>Thresholds for E. coli in Water:</p>
+            <ul>
+                <li><b>Drinkable:</b> 0 CFU/mL</li>
+                <li><b>Medium:</b> 0 - 50 CFU/mL</li>
+                <li><b>Hazardous:</b> Above 50 CFU/mL</li>
+            </ul>
+            <canvas id="ecoliChart"></canvas>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

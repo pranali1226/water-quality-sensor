@@ -1,0 +1,83 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e1eec3, #f05053); 
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+
+.section {
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.chlorine-section {
+    background-color: rgb(23, 153, 170);
+    border: 3px solid white;
+}
+
+.silver-section {
+    background-color: rgb(224, 92, 198);
+    border: 3px solid white;
+}
+
+.ecoli-section {
+    background-color: rgb(149, 164, 47);
+    border: 3px solid white;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.section canvas {
+    margin-top: 20px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+    .section {
+        width: 80%;
+    }
+}
